@@ -1,0 +1,16 @@
+
+abstract综合练习
+1.  有3个类，Soldier军人类，Policeman警察类，ArmedPolice武警类。
+其中Soldier类为抽象类，成员如下：
+private String name; private int age; private char sex;
+无参构造和带参构造方法; 所有成员变量的get和set方法; public abstract void showSoldier();//打印姓名，年龄，性别
+警察类Policeman成员如下：
+private int policeNumber;//警员编号
+无参构造和带参构造方法;  policeNumber的get和set方法;
+武警类ArmedPolice成员如下：
+private String gun;//配枪名称
+无参构造和带参构造方法; gun的get和set方法;
+Soldier类为Policeman和ArmedPolice的父类，使用继承组装三者之间的关系，并在测试类中使用Policeman和ArmedPolice的
+无参构造和带参构造来实例化Soldier对象，调用get和set方法设置和打印信息。再调用show方法打印信息。
+
+

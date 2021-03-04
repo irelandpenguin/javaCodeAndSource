@@ -1,0 +1,13 @@
+/*
+ * 需求：把当前项目目录下的aa.txt内容复制到当前项目目录下的bb.txt中
+ * 
+ * 数据源：
+ * 		aa.txt -- 读取数据 -- 字符转换流 -- InputStreamReader
+ * 目的地：
+ * 		bb.txt -- 写出数据 -- 字符转换流 -- OutputStreamWriter
+ */
+public class CopyFileDemo01 {
+	public static void main(String[] args) throws IOException {
+		test1();// 一次读一个字符，写一个字符
+		test2();// 一次读一个字符数组，写一个字符数组
+	}

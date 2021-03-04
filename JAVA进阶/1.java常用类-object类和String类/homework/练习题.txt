@@ -1,0 +1,95 @@
+Object类
+1. 仿照课程，练习一下。
+
+------------------------------------------------------
+toString()方法
+1. 有一个Game游戏接口，包含1个抽象方法如下：
+public abstract void playGame(); 
+有一个王者荣耀类King，该类包含的成员如下：
+private String gameName; //游戏名称
+private String playerName;//玩家名称
+private double playerTime;//游戏时长
+无参构造和带参构造;name的get和set方法; 
+重写toString()方法。
+King类是Gamer接口实现接口类。
+编写测试类中使用无参构造和带构造创建King对象来初始化Game接口对象，调用playGame()方法打印游戏名称。
+调用toString()方法，打印玩家信息。
+
+------------------------------------------------------
+equals()方法
+1. 有个Farmer农民类。
+成员如下：
+private String name; 
+private int age; 
+private String address;//家庭住址
+无参构造和带参构造方法; 所有成员变量的get和set方法; 
+重写toString()方法;
+重写equals()方法;
+在测试类中使用Farmer的无参构造和带参构造来实例化Farmer对象，
+1）调用toString()方法打印信息;
+2）分别使用 == 和 equals()方法进行比较。
+
+
+
+
+======================================================
+常用类 - String
+
+键盘录入
+1. 仿照课程，创建键盘录入对象Scanner，分别接用字符串，整数，浮点数。
+
+字符串构造方法
+1. 看程序，写结果。
+String s1 = "你好";
+String s2 = "中国";
+String s3 = "你好中国";
+System.out.println(s3.equals("你好" + "中国"));// ？
+System.out.println(s3 == "中国" + "你好");// ？
+System.out.println(s3 =="你好" + "中国");// ？
+System.out.println(s3.equals((s1 + s2)));// ？
+
+------------------------------------------------------
+String类的判断功能
+1. 有一个字符数组{"hello","world","food","good","hello","root","photo","too","well","hold"}; 找出单词"hello", "yida"在数组中的索引位置，
+找不到返回-1。
+
+2. 有一个字符数组{"hello","world","food","good","hello","root","photo","too","well","hold"};找出数组中包含"oo"的数组元素。
+
+3. 模拟微信登录，要求用户输入用户名和密码。
+登录不成功，则一直接要求用户登录; 
+登录成功，则启动猜字母小游戏，共26个大写字母('A'~'Z')。随机生成一个大写字母，然后要求用户键盘录入猜测的字母。
+猜大了，提示"你猜大了"; 猜小了，提示"你猜小了"; 猜对了，提示"恭喜你！猜中了！"; 
+
+
+------------------------------------------------------
+String类的获取功能
+1. 有一个字符串"http://www.innerios.com"，找出包含字符'i'，'n'，'o'，'y'对应的索引位置，找不到返回-1。
+
+2. 键盘录入一段英文，比如:hello, welcome to the world. today is 2018.3.7 HAPPY BIRTHDAY!，单词之间默认用空格隔开。
+	1）统计大写字母字符，小写字母字符，数字字符出现的次数;
+	2）统计字符串"hello", "world"出现的次数;
+	3）统计字包含"o"的单词个数。
+
+3. 查找字符串"today, we will study another string, this string is import for us, now begin the string!"中包含的"string", 输出它们的所有位置。
+
+4. 对字符串对象"helloboy"进行加密，加密后的密文"IFMMPCPZ"，打印输出该密文。(思路：根据字符的ASCII码可知，小写字母与大写字母数值差为32。即 'h'-32就是字符'H')
+
+
+------------------------------------------------------
+String的转换功能
+1. 有一个字节数组{105,68,124,75,111,118,91,101,121,87,105,100,89,97}; 把数组中元素值大于等于97的数组元素组装成一个字符串，并打印输出。
+
+2. 有一个字符数组{'i','A','P','l','B','o','J','Q','v','e','S','y','Y','i','d','Z','a'}; 把数组中元素为小写字母的组装成一个字符串，并打印输出。
+
+3. 把一段英文"Today is Friday!  This is the last weekday!  tomorrow is saturday!  after saturday is sunday"，编写代码把包含"day"的单词全部改成大写(比如："Today"包含"day", 要把"Today"改成"TODAY")，打印输出改写后的新英文。
+
+4. 把一段英文"Today is Friday!  This is the last weekday!  tomorrow is saturday!  after saturday is sunday"，编写代码把包含"day"的单词全部删除，打印输出改写后的新英文。
+
+
+---------------------------------------------------------
+String类的其他功能
+1. 有一个字符串"today, we will study another string, this string is import for us, now begin the string!"，把含有"string"字符串替换成"STRING"，打印输出替换后的新英文。
+
+2. 有一个字符串"i love java, beging to learning java needs a persisting hert!"，去掉后辍为"ing"的单词后辍，打印输出最新英文。
+
+3.  有三个字符串"hello, string"，"test"，"baby"，找出最大字符串与最小字符串并打印出来(使用compareTo方法)。		

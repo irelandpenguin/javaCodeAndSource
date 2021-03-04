@@ -1,0 +1,82 @@
+public static String toString(int[] a) 看源码并分析
+public static void sort(int[] a) 底层是快速排序，知道就可以了。
+public static void sort(int[] a, int fromIndex, int toIndex)  底层是快速排序，知道就可以了。
+public static int binarySearch(int[] a,int key)看源码并分析
+public static int[] copyOfRange(int[] original, int from, int to) 底层调用系统的数组复制方法，知道就可以了。
+public static boolean equals(int[] a, int[] a2)看源码并分析
+
+开发原则：只要是对象，我们都要先判断是否为null。这样，我们才能有效防止空指针异常(NullPointException)。
+	
+//public static String toString(int[] a)
+//int[] arr1 = { 12, 1, 8, 5, 80 };
+//源码如下：
+  public static String toString(int[] a) {
+        if (a == null)
+            return "null";//这里也是字符串，内容为null
+        int iMax = a.length - 1;//iMax=4
+        if (iMax == -1)
+            return "[]";//这里表示空数组
+
+        StringBuilder b = new StringBuilder();
+        b.append('[');//"["
+        for (int i = 0; ; i++) {
+            b.append(a[i]);//"[12, 1, 8, 5, 80"
+            if (i == iMax)
+                return b.append(']').toString();//"[12, 1, 8, 5, 80]"
+            b.append(", ");//"[12, 1, 8, 5, "
+        }
+    }
+
+--------------------------------
+
+//public static int binarySearch(int[] a,int key)
+//int[] arr3 = { 2, 10, 12, 45, 80 };
+//int index = Arrays.binarySearch(arr3, 44);
+//源码如下：
+public static int binarySearch(int[] a, int key) {
+        return binarySearch0(a, 0, a.length, key);
+}
+
+private static int binarySearch0(int[] a, int fromIndex, int toIndex,
+                                     int key) {
+ //a = { 2, 10, 12, 45, 80 }; fromIndex = 0; toIndex=5; key=44;                           
+        int low = fromIndex;//low=0
+        int high = toIndex - 1;//high=4
+
+        while (low <= high) {//3<=2
+            int mid = (low + high) >>> 1;//等价于(low+high)/2, mid=3
+            int midVal = a[mid];//midVal=45
+
+            if (midVal < key)//45<44
+                low = mid + 1;//low=3
+            else if (midVal > key)//45>44
+                high = mid - 1;//high=2
+            else
+                return mid; // key found
+        }
+        return -(low + 1);  // key not found.  -4
+    }
+
+-------------------------------
+
+//public static boolean equals(int[] a, int[] a2)
+//int[] arr4 = { 10, 23, 2, 12, 5 };
+//int[] arr5 = { 10, 23, 2, 12, 5 };
+//Arrays.equals(arr4,arr5);
+//源代码如下：
+    public static boolean equals(int[] a, int[] a2) {
+        if (a==a2)//如果地址相同，说明是同一个对象
+            return true;
+        if (a==null || a2==null)//判断数组是否为null，如果有，直接返回false
+            return false;
+
+        int length = a.length;//length=5
+        if (a2.length != length)//判断数组的长度是否相等，如果不等，直接返回false
+            return false;
+
+        for (int i=0; i<length; i++)//判断数组里的每一个元素是否相等，如果不等，直接返回false
+            if (a[i] != a2[i])
+                return false;
+
+        return true;//确实相等，就返回true
+    }

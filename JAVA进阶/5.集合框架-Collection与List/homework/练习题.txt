@@ -1,0 +1,51 @@
+Collection的功能，不带ALL的
+-------------------------------------
+1. 有一个集合，包含元素为："hello","floor","thanks","think","good","people","yida","will","jarry","internet"。删除集合中包含字母'o'的集合元素，并打印输出最终结果。
+
+
+Collection的功能，带ALL的
+-------------------------------------
+1. 有2个集合，集合A：23,12,45,2,31,67,80,9,78,100。集合B：45,100,55,31,20,9,23,67,45,222。找出两集合的交集，然后对该交集从大到小排序，并打印输出最终结果。
+
+
+Iterator
+-------------------------------------
+1. 有一个集合，包含元素为："foodball","floor","thanks","think","goodluck","wood","yida","will","look","internet"。
+找出包含"oo"的单词并大写输出。
+
+2. 有一个集合，包含元素为："thanks","think","good","people","yida","will","jarry","yellow","run","open"。
+对这些集合元素从小到大排序，打印输出排序后集合元素信息;
+
+
+List
+-------------------------------------
+1. 详细描述下ArrayList，Vector，LinkedList底层数据存储结构的特点。
+
+2.  创建5个Teacher对象(包含：name,age,sex)并把它们添加到集合中，遍历集合输出年龄在30~45之间的教师对象。
+
+
+ List集合的特有功能
+-------------------------------------
+1. 创建5个Teacher对象(包含：name,age,sex)并把它们添加到集合中，遍历输出集合元素。
+	1）for循环遍历（size()+get()）;
+	2）Iterator迭代器遍历(hasNext()+next());
+	
+	
+ArrayList
+---------------------------------
+1. 有一个集合，包含元素为："hello","world","xcode","will","eclipse","yida","hulian","thanks","link","java"。使用ArrayList存放，找出集合元素长度在5~7之间的元素，打印输出。
+
+
+Vector
+---------------------------------
+1. 有一个集合，包含元素为："hello","world","xcode","will","eclipse","yida","hulian","thanks","link","java"。使用Vector的addElement()添加，找出集合元素长度在5~7之间的元素，使用Vector的elements()， hasMoreElements()，nextElement()打印输出。
+
+
+LinkedList
+---------------------------------
+1. 有一个集合，包含内容为：3.12, 9.28, 15.5, 2.56, 90.9, 76.8, 32.18, 44.44, 11.0, 5.55。使用LinkedList的addFirst()存放，遍历输出该集合内容。
+
+
+ArrayList去除集合中的重复元素
+---------------------------------
+1. 有一个集合，包含内容为：7，56，7，34，21，2，34，87，2，56。请去除集合中的重复元素，并打印最终结果。

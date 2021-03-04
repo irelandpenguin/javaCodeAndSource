@@ -1,0 +1,81 @@
+方法
+
+1. 实现以下2个方法，然后在main方法中调用。
+public static int sum(int x, int y); //两个数相加
+public static int ride(int x, int y); //两个数相乘
+
+class Test46{
+	public static int sum(int x,int y){
+		int a = x;
+		int b = y;
+		int c = x+y;
+		return c;
+	}
+	
+	public static int ride(int x,int y){
+		int a = x;
+		int b = y;
+		int c = x*y;
+		return c;
+	}
+	
+	public static void main(String[] args){
+		int result_ = sum(1,2);
+		int result2_ = ride(1,2);
+		System.out.println(result_+","+result2_);
+	}
+}
+2. 写一个方法，求1到100所有能被3整除的数的总和。(参数a赋值为1，参数b赋值为100，参数c赋值为3，返回类型为int)
+class Test462{
+	public static int sum_(int start_,int end_, int num_){
+		int a = start_;
+		int b = end_;
+		int c = num_;
+		int result_=0;
+		for (;a<=b;a++){
+			if (a%num_==0){
+				result_+=a;
+			}
+		}
+		return result_;
+	}
+	
+	public static void main(String[] args){
+		int result_=sum_(1,100,3);
+		System.out.println(result_);
+	}
+}
+
+
+
+3. 使用方法重载，实现2个数的乘积。注意：2个数的类型可能是int，可能是long，可能是double。
+(要求：有2个参数，且返回类型与参数类型相同) 
+class Test463{
+	public static int multi_(int a,int b){
+		int x=a;
+		int y=b;
+		int z=a*b;
+		return z;
+	}
+	
+	public static long multi_(long a,long b){
+		long x=a;
+		long y=b;
+		long z=a*b;
+		return z; 
+	}
+	
+	public static double multi_(double a,double b){
+		double x = a;
+		double y = b;
+		double z = a*b;
+		return z;
+	}
+	
+	public static void main(String[] args){
+		int result_= multi_(1,2);
+		long result2_= multi_(100000000L,1000000L);
+		double result3_= multi_(3.24,3.15);
+		System.out.println(result_+","+result2_+","+result3_);
+	}
+}

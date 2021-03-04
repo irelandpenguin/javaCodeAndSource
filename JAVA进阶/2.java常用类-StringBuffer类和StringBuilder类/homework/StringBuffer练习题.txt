@@ -1,0 +1,33 @@
+StringBuffer的添加功能
+1.  对字符串对象"helloboy"进行加密，要求使用可变字符串添加密文字符。加密后的密文是"IFMMPCPZ"，打印输出该密文。(思路：根据字符的ASCII码可知，小写字母与大写字母数值差为32。即 'h'-32就是字符'H')
+2. 定义一个可变字符串"today, we will study another string, this string is import for us, now begin the string!"，在逗号后面插入字符串"msn"，打印输出插入后的英文。
+
+StringBuffer的删除功能
+1.  有一个可变字符串"i love java, beging to learning java needs a persisting hert!"，去掉后辍为"ing"的单词后辍，打印输出改写后的原可变字符串。
+
+替换，反转功能
+1. 有一个可变字符串"today, we will study another string, this string is import for us, now begin the string!"，把含有"string"字符串替换成"STRING"，打印输出替换后的原字符串。
+
+StringBuffer的截取功能
+1. 把可变字符串"thank you very much, my friends!"截取"very much, my"，截取成功后把字符串"dear students!"拼接其后并打印输出。
+2.  有一个字符数组{"hello","world","foodwater","goodluck","hello","rootboy","photo","toomany","well","hold"};找出数组中包含"oo"的数组元素，然后截取其"oo"后面的字符串，打印输出。
+
+StringBuffer的查询功能
+1. 有一可变字符串"welcom to China, My Friends!"，查找字符串"China"，若存在打印它所在的位置所引。
+2. 查找可变字符串"today, we will study another string, this string is import for us, now begin the string!"中包含的"string", 输出它们的所有位置。
+
+综合练习
+1. 键盘录入字符串，判断该字符串是否是对称字符串。
+    例如"abc"不是对称字符串，"aba"、"abba"、"aaa"、"mnanm"是对称字符串。
+
+----------------------------------------------------------------
+
+数据结构(冒泡排序，选择排序，二分查找)
+1. 有一整型数组 {29, 36, 157, 112, 14, 21, 6, 81, 10, 53}，利用冒泡排序对其进行从大到小排序。
+2. 有一字符数组{'X', 'P', 'T', 'B', 'O', 'C', 'Q', 'A', 'U', 'L'}，利用选择排序对其进行从小到大排序。
+3. 有一整型顺序数组{29, 36, 57, 112, 314, 421, 630, 841, 1090, 5200}，利用二分查找法找出57,630，1090，555分别对应的索引，没找到返回-1。
+
+----------------------------------------------------------------
+Integer类，Character类
+1. 键盘录入一个整数，打印输出其对应的二进制，八进制，十六进制。
+2. 键盘录入一个字符串，统计字符串中大写字母字符，小写字母字符，数字字符。

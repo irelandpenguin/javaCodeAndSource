@@ -1,0 +1,4 @@
+
+1. 面试题：编译时期异常和运行时期异常的区别。
+2. 面试题：throws和throw的区别。
+3. 面试题：final，finally和finalize的区别？
