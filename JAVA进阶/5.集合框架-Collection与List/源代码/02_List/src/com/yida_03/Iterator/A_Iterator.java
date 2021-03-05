@@ -38,8 +38,8 @@ public class A_Iterator {
 		
 		// 迭代器遍历
 		
-		//使用iterator触发 并发修改异常 报错;    ConcurrentModificationException;
-		//迭代器是集合的专用遍历 增加新的元素正好更改内容导致出错；
+		//使用iterator触发 并发修改异常 报错;    ConcurrentModificationException;  重点
+		//迭代器是集合的专用遍历 增加新的元素正好更改内容导致出错；重点
 			
 		/*Iterator it = lt.iterator();
 		while (it.hasNext()) {
