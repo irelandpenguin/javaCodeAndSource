@@ -13,8 +13,8 @@
  * 			public Object removeFirst():移除并返回列表的第一个元素
  * 			public Object removeLast():移除并返回列表的最后一个元素
  * 		D:压栈与弹栈
- * 			public void push(Object e):压栈，元素插入列表的开头
- * 			public Object pop():弹栈，移除并返回列表的第一个元素
+ * 			public void push(Object e):压栈，元素插入列表的开头  //和addFirst()一样功能
+ * 			public Object pop():弹栈，移除并返回列表的第一个元素//和remove()一样功能；
  */
 package com.yida_03.LinkedList;
 

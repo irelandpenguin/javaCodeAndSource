@@ -78,7 +78,7 @@ public class B_Equals {
 				//if (stu1.equals(stu2)) {
 				if (stu1.getName().equals(stu2.getName()) && stu1.getAge() == stu2.getAge()) {
 					lt.remove(j);
-					j--;// 需要向前走一位，防止漏网之鱼
+					j--;// 需要向前走一位，防止漏网之鱼   在ArrayList原来的副本基础上修改，index会改变的，所以j这个index需要自减；
 				}
 			}
 		}
