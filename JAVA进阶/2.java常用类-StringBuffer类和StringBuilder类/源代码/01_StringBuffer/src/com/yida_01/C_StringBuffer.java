@@ -1,7 +1,7 @@
 /*
- * StringBufferµÄÉ¾³ı¹¦ÄÜ
- * public StringBuffer deleteCharAt(int index):É¾³ıÖ¸¶¨Î»ÖÃµÄ×Ö·û£¬²¢·µ»Ø±¾Éí
- * public StringBuffer delete(int start,int end):É¾³ı´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈİ£¬²¢·µ»Ø±¾Éí
+ * StringBufferçš„åˆ é™¤åŠŸèƒ½
+ * public StringBuffer deleteCharAt(int index):åˆ é™¤æŒ‡å®šä½ç½®çš„å­—ç¬¦ï¼Œå¹¶è¿”å›æœ¬èº«
+ * public StringBuffer delete(int start,int end):åˆ é™¤ä»æŒ‡å®šä½ç½®å¼€å§‹æŒ‡å®šä½ç½®ç»“æŸçš„å†…å®¹ï¼Œå¹¶è¿”å›æœ¬èº«
  */
 package com.yida_01;
 
@@ -9,24 +9,24 @@ public class C_StringBuffer {
 
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer();
-		sb.append("hello").append("world").append("yida");//Á´Ê½±à³Ì
+		sb.append("hello").append("world").append("yida");//é“¾å¼ç¼–ç¨‹
 		System.out.println("sb:" + sb);
 		System.out.println("------");
 
-		// public StringBuffer deleteCharAt(int index):É¾³ıÖ¸¶¨Î»ÖÃµÄ×Ö·û£¬²¢·µ»Ø±¾Éí
+		// public StringBuffer deleteCharAt(int index):åˆ é™¤æŒ‡å®šä½ç½®çš„å­—ç¬¦ï¼Œå¹¶è¿”å›æœ¬èº«
 		//System.out.println(sb.length()); 
 		sb.deleteCharAt(2);
 		//System.out.println(sb.length()); 
 		System.out.println("sb:" + sb);
 
-		// public StringBuffer delete(int start,int end):É¾³ı´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈİ£¬²¢·µ»Ø±¾Éí
+		// public StringBuffer delete(int start,int end):åˆ é™¤ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸçš„å†…å®¹ï¼Œå¹¶è¿”å›æœ¬èº«
 		sb.delete(5, 10);
 		//System.out.println(sb.length());
 		System.out.println("sb:" + sb);
 
 		sb.delete(0, sb.length());
 		System.out.println("sb:" + sb);
-		//System.out.println(sb.length());
+		//System.out.println(sb.length()); 
 	}
 
 }
