@@ -1,25 +1,25 @@
 /*
- * StringBufferµÄÌí¼Ó¹¦ÄÜ£º
- * public StringBuffer append(String str):¿ÉÒÔ°ÑÈÎÒâÀàĞÍÊı¾İÌí¼Óµ½¿É±ä×Ö·û´®ÀïÃæ,²¢·µ»Ø¿É±ä×Ö·û´®±¾Éí
+ * StringBufferçš„æ·»åŠ åŠŸèƒ½ï¼š
+ * public StringBuffer append(String str):å¯ä»¥æŠŠä»»æ„ç±»å‹æ•°æ®æ·»åŠ åˆ°å¯å˜å­—ç¬¦ä¸²é‡Œé¢,å¹¶è¿”å›å¯å˜å­—ç¬¦ä¸²æœ¬èº«
  * 
- * public StringBuffer insert(int offset,String str):ÔÚÖ¸¶¨Î»ÖÃ°ÑÈÎÒâÀàĞÍµÄÊı¾İ²åÈëµ½¿É±ä×Ö·û´®ÀïÃæ,²¢·µ»Ø¿É±ä×Ö·û´®±¾Éí
+ * public StringBuffer insert(int offset,String str):åœ¨æŒ‡å®šä½ç½®æŠŠä»»æ„ç±»å‹çš„æ•°æ®æ’å…¥åˆ°å¯å˜å­—ç¬¦ä¸²é‡Œé¢,å¹¶è¿”å›å¯å˜å­—ç¬¦ä¸²æœ¬èº«
  */
 package com.yida_01;
 
 public class B_StringBuffer {
 	public static void main(String[] args) {
-		StringBuffer sb = new StringBuffer();// ´´½¨¿É±ä×Ö·û´®¶ÔÏó
+		StringBuffer sb = new StringBuffer();// åˆ›å»ºå¯å˜å­—ç¬¦ä¸²å¯¹è±¡
 
 		// public StringBuffer append(String
-		// str):¿ÉÒÔ°ÑÈÎÒâÀàĞÍÊı¾İÌí¼Óµ½×Ö·û´®»º³åÇøÀïÃæ,²¢·µ»Ø×Ö·û´®»º³åÇø±¾Éí
+		// str):å¯ä»¥æŠŠä»»æ„ç±»å‹æ•°æ®æ·»åŠ åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºé‡Œé¢,å¹¶è¿”å›å­—ç¬¦ä¸²ç¼“å†²åŒºæœ¬èº«
 		StringBuffer sb2 = sb.append("yida");
 		System.out.println("sb:" + sb);// yida
 		System.out.println("sb2:" + sb2);// yida
-		System.out.println(sb == sb2);// sb2µÄµØÖ·ÓësbÒ»Ñù£¬sb2¾ÍÊÇsb
+		System.out.println(sb == sb2);// sb2çš„åœ°å€ä¸sbä¸€æ ·ï¼Œsb2å°±æ˜¯sb
 		System.out.println("------");
 
 		
-		// ¼ÌĞøÌí¼Ó²»Í¬ÀàĞÍµÄÊı¾İ
+		// ç»§ç»­æ·»åŠ ä¸åŒç±»å‹çš„æ•°æ®
 		sb.append("hello");
 		sb.append(true);
 		sb.append(100);
@@ -29,8 +29,8 @@ public class B_StringBuffer {
 		sb.append(88888888);
 		System.out.println("sb:" + sb);
 		System.out.println("------");
-		
-		// °Ñ×Ö·ûÊı×éÌí¼Óµ½×Ö·û´®»º³åÇøÖĞ
+		 
+		// æŠŠå­—ç¬¦æ•°ç»„æ·»åŠ åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºä¸­
 		// sb.append(str)
 		char[] ary = { 'a', 'B', '0', 'X' };
 		sb.append(ary);
@@ -40,19 +40,19 @@ public class B_StringBuffer {
 		System.out.println("sb:" + sb);
 		//System.out.println("------");
 		
-		// Á´Ê½±à³Ì(Á´Ê½±à³ÌµÄÇ°Ìá£ºÃ¿¸ö.Ç°Ãæ¶¼±ØĞëÊÇÒ»¸ö¶ÔÏó²Å¿ÉÒÔ£¡)
+		// é“¾å¼ç¼–ç¨‹(é“¾å¼ç¼–ç¨‹çš„å‰æï¼šæ¯ä¸ª.å‰é¢éƒ½å¿…é¡»æ˜¯ä¸€ä¸ªå¯¹è±¡æ‰å¯ä»¥ï¼)
 		StringBuffer ssb = new StringBuffer();
-		ssb.append("ÄãºÃ").append("yidahulian").append(true).append(100).append(3.14);
+		ssb.append("ä½ å¥½").append("yidahulian").append(true).append(100).append(3.14);
 		System.out.println("ssb:" + ssb);
 		
 		// public StringBuffer insert(int offset,String
-		// str):ÔÚÖ¸¶¨Î»ÖÃ°ÑÈÎÒâÀàĞÍµÄÊı¾İ²åÈëµ½×Ö·û´®»º³åÇøÀïÃæ,²¢·µ»Ø×Ö·û´®»º³åÇø±¾Éí
+		// str):åœ¨æŒ‡å®šä½ç½®æŠŠä»»æ„ç±»å‹çš„æ•°æ®æ’å…¥åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºé‡Œé¢,å¹¶è¿”å›å­—ç¬¦ä¸²ç¼“å†²åŒºæœ¬èº«
 		StringBuffer buffer = new StringBuffer("hello");
 		buffer.insert(5, "world");
 		System.out.println("buffer:" + buffer);
 		System.out.println("------");
 		
-		// ¼ÌĞø²åÈë²»Í¬ÀàĞÍÊı¾İ
+		// ç»§ç»­æ’å…¥ä¸åŒç±»å‹æ•°æ®
 		buffer.insert(0, true);
 		buffer.insert(1, 'A');
 		buffer.insert(2, 3.14);
@@ -60,7 +60,7 @@ public class B_StringBuffer {
 		System.out.println("buffer:" + buffer);
 		System.out.println("------");
 		
-		// °Ñ×Ö·ûÊı×é²åÈëµ½×Ö·û´®»º³åÇø¶ÔÏóÖĞ
+		// æŠŠå­—ç¬¦æ•°ç»„æ’å…¥åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºå¯¹è±¡ä¸­
 		char[] chs = { 'a', 'b', 'c', 'd' };
 		buffer.insert(0, chs);
 		System.out.println("buffer:" + buffer);
