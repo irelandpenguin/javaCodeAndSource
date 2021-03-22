@@ -1,8 +1,8 @@
 /*
- * StringBufferµÄ²éÑ¯¹¦ÄÜ:
- * public int indexOf(String str)·µ»ØµÚÒ»´Î³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ¸Ã×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public int indexOf(String str, int fromIndex)´ÓÖ¸¶¨µÄË÷Òı´¦¿ªÊ¼£¬·µ»ØµÚÒ»´Î³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ¸Ã×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public int lastIndexOf(String str)·µ»Ø×îÓÒ±ß³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
+ * StringBufferçš„æŸ¥è¯¢åŠŸèƒ½:
+ * public int indexOf(String str)è¿”å›ç¬¬ä¸€æ¬¡å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨è¯¥å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public int indexOf(String str, int fromIndex)ä»æŒ‡å®šçš„ç´¢å¼•å¤„å¼€å§‹ï¼Œè¿”å›ç¬¬ä¸€æ¬¡å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨è¯¥å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public int lastIndexOf(String str)è¿”å›æœ€å³è¾¹å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
  */
 package com.yida_01;
 
@@ -10,23 +10,23 @@ public class F_StringBuffer {
 
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer();
-		sb.append("helloyidajava").append("yidakeji").append("yidahulian");//Á´Ê½±à³Ì
+		sb.append("helloyidajava").append("yidakeji").append("yidahulian");//é“¾å¼ç¼–ç¨‹
 		System.out.println("sb:" + sb);
 		System.out.println("-------");
 
-		// public int indexOf(String str)·µ»ØµÚÒ»´Î³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ¸Ã×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
+		// public int indexOf(String str)è¿”å›ç¬¬ä¸€æ¬¡å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨è¯¥å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
 		int index = sb.indexOf("yida");
 		System.out.println("index:" + index);
 		System.out.println("-------");
 		
-		// public int indexOf(String str, int fromIndex)´ÓÖ¸¶¨µÄË÷Òı´¦¿ªÊ¼£¬·µ»ØµÚÒ»´Î³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ¸Ã×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
+		// public int indexOf(String str, int fromIndex)ä»æŒ‡å®šçš„ç´¢å¼•å¤„å¼€å§‹ï¼Œè¿”å›ç¬¬ä¸€æ¬¡å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨è¯¥å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
 		int index2 = sb.indexOf("yida", 13);
 		System.out.println("index2:" + index2);
 		System.out.println("--------");
 
-		// public int lastIndexOf(String str)·µ»Ø×îÓÒ±ß³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
+		// public int lastIndexOf(String str)è¿”å›æœ€å³è¾¹å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
 		int index3 = sb.lastIndexOf("yida");
 		System.out.println("index3:" + index3);
 	}
 
-}
+} 
