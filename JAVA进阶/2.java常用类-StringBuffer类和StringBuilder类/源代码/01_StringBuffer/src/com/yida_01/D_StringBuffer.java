@@ -43,7 +43,7 @@ public class D_StringBuffer {
 		sb3.setCharAt(2, '!');
 		System.out.println("sb3:" + sb3);
 		System.out.println("------");
-	 
+	  
 	}
 
 }
