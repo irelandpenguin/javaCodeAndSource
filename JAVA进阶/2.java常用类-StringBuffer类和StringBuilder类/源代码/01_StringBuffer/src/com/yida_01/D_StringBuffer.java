@@ -1,11 +1,11 @@
  /*
- * Ìæ»»¹¦ÄÜ£º
- * public StringBuffer replace(int start,int end,String str):´Óstart¿ªÊ¼µ½endÓÃstrÌæ»»
+ * æ›¿æ¢åŠŸèƒ½ï¼š
+ * public StringBuffer replace(int start,int end,String str):ä»startå¼€å§‹åˆ°endç”¨stræ›¿æ¢
  * 
- * ·´×ª¹¦ÄÜ£º
+ * åè½¬åŠŸèƒ½ï¼š
  * public StringBuffer reverse()
  * 
- * ÉèÖÃ¸ø¶¨Ë÷Òı´¦µÄ×Ö·û
+ * è®¾ç½®ç»™å®šç´¢å¼•å¤„çš„å­—ç¬¦
  * public void setCharAt(int index, char ch)
  */
 package com.yida_01;
@@ -22,28 +22,28 @@ public class D_StringBuffer {
 		
 		
 		// public StringBuffer replace(int start,int end,String
-		// str):´Óstart¿ªÊ¼µ½endÓÃstrÌæ»»
+		// str):ä»startå¼€å§‹åˆ°endç”¨stræ›¿æ¢
 		sb.replace(5, 10, "yidahulian");
 		System.out.println("sb:" + sb);
 		System.out.println("------");
-		sb.replace(sb.length() - 4, sb.length(), "ÒË´ï»¥Áª");
+		sb.replace(sb.length() - 4, sb.length(), "å®œè¾¾äº’è”");
 		System.out.println("sb:" + sb);
 		System.out.println("------");
 		
-		// public StringBuffer reverse()×Ö·û´®·´×ª¹¦ÄÜ
-		StringBuffer sb2 = new StringBuffer("ÒË´ï»¥Áª");
+		// public StringBuffer reverse()å­—ç¬¦ä¸²åè½¬åŠŸèƒ½
+		StringBuffer sb2 = new StringBuffer("å®œè¾¾äº’è”");
 		sb2.reverse();
 		System.out.println("sb2:" + sb2);
 		
-		// public void setCharAt(int index, char ch)ÉèÖÃ¸ø¶¨Ë÷Òı´¦µÄ×Ö·û
-		StringBuffer sb3 = new StringBuffer("ÄãºÃ,java");
-		sb3.setCharAt(1, '°ô');
+		// public void setCharAt(int index, char ch)è®¾ç½®ç»™å®šç´¢å¼•å¤„çš„å­—ç¬¦
+		StringBuffer sb3 = new StringBuffer("ä½ å¥½,java");
+		sb3.setCharAt(1, 'æ£’');
 		System.out.println("sb3:" + sb3);
 		System.out.println("------");
 		sb3.setCharAt(2, '!');
 		System.out.println("sb3:" + sb3);
 		System.out.println("------");
-		
+	 
 	}
 
 }
