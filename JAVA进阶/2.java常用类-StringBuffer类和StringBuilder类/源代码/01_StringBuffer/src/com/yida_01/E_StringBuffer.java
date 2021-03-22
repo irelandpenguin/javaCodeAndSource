@@ -1,5 +1,5 @@
 /*
- * StringBufferµÄ½ØÈ¡¹¦ÄÜ:×¢Òâ·µ»ØÖµÀàĞÍ²»ÔÙÊÇStringBuffer±¾ÉíÁË
+ * StringBufferçš„æˆªå–åŠŸèƒ½:æ³¨æ„è¿”å›å€¼ç±»å‹ä¸å†æ˜¯StringBufferæœ¬èº«äº†
  * public String substring(int start)
  * public String substring(int start,int end)
  */
@@ -31,7 +31,7 @@ public class E_StringBuffer {
 		String s3 = sb.substring(0, sb.length());
 		System.out.println("s3:" + s3);
 		System.out.println("sb:" + sb);
-		
+		 
 	}
 
 }
