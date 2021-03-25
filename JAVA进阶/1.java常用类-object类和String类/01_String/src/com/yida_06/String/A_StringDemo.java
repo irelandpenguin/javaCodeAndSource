@@ -1,90 +1,90 @@
 /*
- * StringµÄ×ª»»¹¦ÄÜ£º
- * public byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊı×é¡£
- * public char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é¡£
- * public static String valueOf(char[] chs):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®¡£
- * public static String valueOf(int i):°ÑintÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
- * public static String valueOf(char c):°ÑcharÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
- * public static String valueOf(double d):°ÑdoubleÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
- * ×¢Òâ£ºvalueOf·½·¨»¹ÓĞºÜ¶àÆäËüÖØÔØ£¬¿´JDK API°ïÖúÎÄµµ¡£Ëü¿ÉÒÔ°ÑÈÎÒâÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
- * public String toLowerCase():°Ñ×Ö·û´®×ª³ÉĞ¡Ğ´¡£
- * public String toUpperCase():°Ñ×Ö·û´®×ª³É´óĞ´¡£
- * public String concat(String str):°Ñ×Ö·û´®Æ´½Ó¡£
- * public String[] split(String regex):¸ù¾İ¸ø¶¨ÕıÔò±í´ïÊ½µÄÆ¥Åä²ğ·Ö´Ë×Ö·û´®¡£
- * 		×¢Òâ£ºÕâÀïÖ»ÊÇ¼òµ¥Ê¹ÓÃ£¬ÕıÔò±í´ïÊ½ºóÃæ»¹»áÏêÏ¸½²½â¡£
+ * Stringçš„è½¬æ¢åŠŸèƒ½ï¼š
+ * public byte[] getBytes():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„ã€‚
+ * public char[] toCharArray():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„ã€‚
+ * public static String valueOf(char[] chs):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²ã€‚
+ * public static String valueOf(int i):æŠŠintç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+ * public static String valueOf(char c):æŠŠcharç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+ * public static String valueOf(double d):æŠŠdoubleç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+ * æ³¨æ„ï¼švalueOfæ–¹æ³•è¿˜æœ‰å¾ˆå¤šå…¶å®ƒé‡è½½ï¼Œçœ‹JDK APIå¸®åŠ©æ–‡æ¡£ã€‚å®ƒå¯ä»¥æŠŠä»»æ„ç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+ * public String toLowerCase():æŠŠå­—ç¬¦ä¸²è½¬æˆå°å†™ã€‚
+ * public String toUpperCase():æŠŠå­—ç¬¦ä¸²è½¬æˆå¤§å†™ã€‚
+ * public String concat(String str):æŠŠå­—ç¬¦ä¸²æ‹¼æ¥ã€‚
+ * public String[] split(String regex):æ ¹æ®ç»™å®šæ­£åˆ™è¡¨è¾¾å¼çš„åŒ¹é…æ‹†åˆ†æ­¤å­—ç¬¦ä¸²ã€‚
+ * 		æ³¨æ„ï¼šè¿™é‡Œåªæ˜¯ç®€å•ä½¿ç”¨ï¼Œæ­£åˆ™è¡¨è¾¾å¼åé¢è¿˜ä¼šè¯¦ç»†è®²è§£ã€‚
  */
 package com.yida_06.String;
 
 public class A_StringDemo {
 
 	public static void main(String[] args) {
-		// public byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊı×é¡£
+		// public byte[] getBytes():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—èŠ‚æ•°ç»„ã€‚
 		String s = "helloworld";
 		byte[] bye = s.getBytes();
 		for (int i = 0; i < bye.length; i++) {
 			System.out.print(bye[i] + " ");
 		}
 		
-		//×Ö½ÚÊı×é×ª×Ö·û´®
+		//å­—èŠ‚æ•°ç»„è½¬å­—ç¬¦ä¸²
 		//String ss = new String(bye);
 		//System.out.println(ss);
 		
-		
+		 
 		System.out.println("\n------");
 
-		// public char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é¡£
+		// public char[] toCharArray():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„ã€‚
 		char[] cha = s.toCharArray();
 		for (int i = 0; i < cha.length; i++) {
 			System.out.print(cha[i] + " ");
 		}
 		
-		//×Ö·ûÊı×é×ª×Ö·û´®
+		//å­—ç¬¦æ•°ç»„è½¬å­—ç¬¦ä¸²
 		//String ss = new String(cha);
 		//System.out.println(ss);
 
 		System.out.println("\n------");
 		
-		// public static String valueOf(char[] chs):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®¡£
+		// public static String valueOf(char[] chs):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²ã€‚
 		char[] chars = { 'y', 'i', 'd', 'a', 'h', 'u', 'l', 'i', 'a', 'n' };
 		String s2 = String.valueOf(chars);
 		System.out.println(s2);
 
 		System.out.println("------");
 		
-		// public static String valueOf(int i):°ÑintÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
-		// public static string valueOf(char c):°ÑcharÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
-		// public static string valueOf(double d):°ÑdoubleÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
-		// ×¢Òâ£ºvalueOf·½·¨»¹ÓĞºÜ¶àÆäËüÖØÔØ£¬¿´JDK API°ïÖúÎÄµµ¡£Ëü¿ÉÒÔ°ÑÈÎÒâÀàĞÍµÄÊı¾İ×ª³É×Ö·û´®¡£
+		// public static String valueOf(int i):æŠŠintç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+		// public static string valueOf(char c):æŠŠcharç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+		// public static string valueOf(double d):æŠŠdoubleç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
+		// æ³¨æ„ï¼švalueOfæ–¹æ³•è¿˜æœ‰å¾ˆå¤šå…¶å®ƒé‡è½½ï¼Œçœ‹JDK APIå¸®åŠ©æ–‡æ¡£ã€‚å®ƒå¯ä»¥æŠŠä»»æ„ç±»å‹çš„æ•°æ®è½¬æˆå­—ç¬¦ä¸²ã€‚
 		int num = 100;
 		char c = 'A';
 		double dl = 3.14;
 		String s_num = String.valueOf(num);
 		String s_c = String.valueOf(c);
 		String s_dl = String.valueOf(dl);
-		System.out.println("×ª»»ºóµÄ½á¹ûÎª" + s_num + ", " + s_c + ", " + s_dl);
+		System.out.println("è½¬æ¢åçš„ç»“æœä¸º" + s_num + ", " + s_c + ", " + s_dl);
 		
 		System.out.println("------");
 
-		// public String toLowerCase():°Ñ×Ö·û´®×ª³ÉĞ¡Ğ´¡£
-		// public String toUpperCase():°Ñ×Ö·û´®×ª³É´óĞ´¡£
+		// public String toLowerCase():æŠŠå­—ç¬¦ä¸²è½¬æˆå°å†™ã€‚
+		// public String toUpperCase():æŠŠå­—ç¬¦ä¸²è½¬æˆå¤§å†™ã€‚
 		String s3 = "YiDaHuLian";
 		String s_low = s3.toLowerCase();
 		String s_upper = s3.toUpperCase();
-		System.out.println("Êä»»ºóµÄ½á¹ûÎª" + s_low + ", " + s_upper);
+		System.out.println("è¾“æ¢åçš„ç»“æœä¸º" + s_low + ", " + s_upper);
 		
 		System.out.println("------");
 
-		// public String concat(String str):°Ñ×Ö·û´®Æ´½Ó¡£
+		// public String concat(String str):æŠŠå­—ç¬¦ä¸²æ‹¼æ¥ã€‚
 		String s4 = "hello", s5 = "world", s6, s7;
 		s6 = s4.concat(s5);
-		System.out.println("Æ´½ÓºóµÄ×Ö·û´®Îª" + s6);
+		System.out.println("æ‹¼æ¥åçš„å­—ç¬¦ä¸²ä¸º" + s6);
 		s7 = s4 + s5;
-		System.out.println("Æ´½ÓºóµÄ×Ö·û´®Îª" + s7);
+		System.out.println("æ‹¼æ¥åçš„å­—ç¬¦ä¸²ä¸º" + s7);
 		
 		System.out.println("------");
 
-		// public String[] split(String regex):¸ù¾İ¸ø¶¨ÕıÔò±í´ïÊ½µÄÆ¥Åä²ğ·Ö´Ë×Ö·û´®¡£
-		//×¢Òâ£ºÕâÀïÖ»ÊÇ¼òµ¥Ê¹ÓÃ£¬ÕıÔò±í´ïÊ½ºóÃæ»¹»áÏêÏ¸½²½â¡£
+		// public String[] split(String regex):æ ¹æ®ç»™å®šæ­£åˆ™è¡¨è¾¾å¼çš„åŒ¹é…æ‹†åˆ†æ­¤å­—ç¬¦ä¸²ã€‚
+		//æ³¨æ„ï¼šè¿™é‡Œåªæ˜¯ç®€å•ä½¿ç”¨ï¼Œæ­£åˆ™è¡¨è¾¾å¼åé¢è¿˜ä¼šè¯¦ç»†è®²è§£ã€‚
 		String s8 = "hello world i love yida";
 		String[] ary = s8.split(" ");
 		for (int i = 0; i < ary.length; i++) {
