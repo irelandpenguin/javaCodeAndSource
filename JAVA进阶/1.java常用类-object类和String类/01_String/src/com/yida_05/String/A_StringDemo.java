@@ -1,89 +1,89 @@
 /*
- * StringÀàµÄ»ñÈ¡¹¦ÄÜ
- * public int length():»ñÈ¡×Ö·û´®µÄ³¤¶È¡£
- * public char charAt(int index):»ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃµÄ×Ö·û
- * public int indexOf(int ch):·µ»ØÖ¸¶¨×Ö·ûÔÚ´Ë×Ö·û´®ÖĞµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public int indexOf(int ch,int fromIndex):·µ»ØÖ¸¶¨×Ö·ûÔÚ´Ë×Ö·û´®ÖĞ´ÓÖ¸¶¨Î»ÖÃºóµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public int indexOf(String str):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public int indexOf(String str,int fromIndex):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞ´ÓÖ¸¶¨Î»ÖÃºóµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public int lastIndexOf(String str)·µ»Ø×îÓÒ±ß³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
- * public String substring(int start):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼½ØÈ¡×Ö·û´®,Ä¬ÈÏµ½Ä©Î²¡£
- * public String substring(int start,int end):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊø½ØÈ¡×Ö·û´®¡£
+ * Stringç±»çš„è·å–åŠŸèƒ½
+ * public int length():è·å–å­—ç¬¦ä¸²çš„é•¿åº¦ã€‚
+ * public char charAt(int index):è·å–æŒ‡å®šç´¢å¼•ä½ç½®çš„å­—ç¬¦
+ * public int indexOf(int ch):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public int indexOf(int ch,int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ä»æŒ‡å®šä½ç½®åç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public int indexOf(String str):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public int indexOf(String str,int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ä»æŒ‡å®šä½ç½®åç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public int lastIndexOf(String str)è¿”å›æœ€å³è¾¹å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
+ * public String substring(int start):ä»æŒ‡å®šä½ç½®å¼€å§‹æˆªå–å­—ç¬¦ä¸²,é»˜è®¤åˆ°æœ«å°¾ã€‚
+ * public String substring(int start,int end):ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸæˆªå–å­—ç¬¦ä¸²ã€‚
  */
 package com.yida_05.String;
 
 public class A_StringDemo {
 
 	public static void main(String[] args) {
-		// public int length():»ñÈ¡×Ö·û´®µÄ³¤¶È¡£
+		// public int length():è·å–å­—ç¬¦ä¸²çš„é•¿åº¦ã€‚
 		String s = "hello";
 		System.out.println("length=" + s.length());
 
 		System.out.println("------");
 
-		// public char charAt(int index):»ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃµÄ×Ö·û
+		// public char charAt(int index):è·å–æŒ‡å®šç´¢å¼•ä½ç½®çš„å­—ç¬¦
 		String s2 = "hello world";
 		char c = s2.charAt(6);
 		System.out.println("s2.charAt(6)=" + c);
-		c = s2.charAt(s2.length()-1);//»ñÈ¡×îºóÒ»¸ö×Ö·û
-		System.out.println("×îºóÒ»¸ö×Ö·ûÎª£º" + c);
+		c = s2.charAt(s2.length()-1);//è·å–æœ€åä¸€ä¸ªå­—ç¬¦
+		System.out.println("æœ€åä¸€ä¸ªå­—ç¬¦ä¸ºï¼š" + c);
 		
 		System.out.println("------");
 
 		
-		// public int indexOf(int ch):·µ»ØÖ¸¶¨×Ö·ûÔÚ´Ë×Ö·û´®ÖĞµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
+		// public int indexOf(int ch):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
 		int index = s2.indexOf('l');
-		System.out.println(s2 + "ÖĞ×Ö·ûlµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index);
+		System.out.println(s2 + "ä¸­å­—ç¬¦lç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index);
 		index = s2.indexOf('A');
-		System.out.println(s2 + "ÖĞ×Ö·ûAµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index);
+		System.out.println(s2 + "ä¸­å­—ç¬¦Aç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index);
 		
 		System.out.println("------");
 
-		// public int indexOf(int ch,int fromIndex):·µ»ØÖ¸¶¨×Ö·ûÔÚ´Ë×Ö·û´®ÖĞ´ÓÖ¸¶¨Î»ÖÃºóµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
+		// public int indexOf(int ch,int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ä»æŒ‡å®šä½ç½®åç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
 		int index2 = s2.indexOf('l', 6);
-		System.out.println("×Ö·ûlÔÚÔ­×Ö·û´®" + s2 + "Ë÷ÒıÎª6ÒÔºóµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index2);
+		System.out.println("å­—ç¬¦låœ¨åŸå­—ç¬¦ä¸²" + s2 + "ç´¢å¼•ä¸º6ä»¥åç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index2);
 		index2 = s2.indexOf('A', 6);
-		System.out.println("×Ö·ûAÔÚÔ­×Ö·û´®" + s2 + "Ë÷ÒıÎª6ÒÔºóµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index2);
+		System.out.println("å­—ç¬¦Aåœ¨åŸå­—ç¬¦ä¸²" + s2 + "ç´¢å¼•ä¸º6ä»¥åç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index2);
 		
 		System.out.println("------");
 
-		// public int indexOf(String str):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
+		// public int indexOf(String str):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
 		String s3 = "hi, yidahulian, i love yida, welcom to yidahulian";
 		String s4 = "yida";
 		int index3 = s3.indexOf(s4);
-		System.out.println(s4 + "ÔÚÔ­×Ö·û´®" + s3 + "ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index3);
+		System.out.println(s4 + "åœ¨åŸå­—ç¬¦ä¸²" + s3 + "ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index3);
 		index3 = s3.indexOf("YIDA");
-		System.out.println("YIDAÔÚÔ­×Ö·û´®" + s3 + "ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index3);
-		
+		System.out.println("YIDAåœ¨åŸå­—ç¬¦ä¸²" + s3 + "ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index3);
+		 
 		System.out.println("------");
 
-		// public int indexOf(String str,int fromIndex):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞ´ÓÖ¸¶¨Î»ÖÃºóµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
+		// public int indexOf(String str,int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ä»æŒ‡å®šä½ç½®åç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
 		int index4 = s3.indexOf(s4, 15);
-		System.out.println(s4 + "ÔÚÔ­×Ö·û´®" + s3 + "ÖĞ´ÓË÷Òı15ÒÔºóµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index4);
+		System.out.println(s4 + "åœ¨åŸå­—ç¬¦ä¸²" + s3 + "ä¸­ä»ç´¢å¼•15ä»¥åç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index4);
 		index4 = s3.indexOf("YIDA", 15);
-		System.out.println("YIDAÔÚÔ­×Ö·û´®" + s3 + "ÖĞ´ÓË÷Òı15ÒÔºóµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index4);
+		System.out.println("YIDAåœ¨åŸå­—ç¬¦ä¸²" + s3 + "ä¸­ä»ç´¢å¼•15ä»¥åç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index4);
 		
 		System.out.println("------");
 		
-		//public int lastIndexOf(String str)·µ»Ø×îÓÒ±ß³öÏÖµÄÖ¸¶¨×Ó×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÄË÷Òı¡£ÕÒ²»µ½·µ»Ø-1
+		//public int lastIndexOf(String str)è¿”å›æœ€å³è¾¹å‡ºç°çš„æŒ‡å®šå­å­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­çš„ç´¢å¼•ã€‚æ‰¾ä¸åˆ°è¿”å›-1
 		int index5 = s3.lastIndexOf("yida");
-		System.out.println("yidaÔÚÔ­×Ö·û´®" + s3 + "ÖĞ×îºóµÚÒ»´Î³öÏÖµÄÎ»ÖÃÎª" + index5);
+		System.out.println("yidaåœ¨åŸå­—ç¬¦ä¸²" + s3 + "ä¸­æœ€åç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ä¸º" + index5);
 		
 		System.out.println("------");
 
-		// public String substring(int start):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼½ØÈ¡×Ö·û´®,Ä¬ÈÏµ½Ä©Î²¡£
+		// public String substring(int start):ä»æŒ‡å®šä½ç½®å¼€å§‹æˆªå–å­—ç¬¦ä¸²,é»˜è®¤åˆ°æœ«å°¾ã€‚
 		String sub1 = s3.substring(16);
-		System.out.println("½ØÈ¡µÄ×Ó´®Îª" + sub1);
+		System.out.println("æˆªå–çš„å­ä¸²ä¸º" + sub1);
 		
 		System.out.println("------");
 
-		// public String substring(int start,int end):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊø½ØÈ¡×Ö·û´®¡£
+		// public String substring(int start,int end):ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸæˆªå–å­—ç¬¦ä¸²ã€‚
 		String sub2 = s3.substring(16, 27);
-		System.out.println("½ØÈ¡µÄ×Ó´®Îª" + sub2);
+		System.out.println("æˆªå–çš„å­ä¸²ä¸º" + sub2);
 		
 		System.out.println("------");
 
-		// ĞèÇó£º±éÀú»ñÈ¡×Ö·û´®ÖĞµÄÃ¿Ò»¸ö×Ö·û¡£
+		// éœ€æ±‚ï¼šéå†è·å–å­—ç¬¦ä¸²ä¸­çš„æ¯ä¸€ä¸ªå­—ç¬¦ã€‚
 		String str = "hello yidahulian";
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
