@@ -1,14 +1,14 @@
 /*
- * StringÀàµÄÆäËû¹¦ÄÜ£º
+ * Stringç±»çš„å…¶ä»–åŠŸèƒ½ï¼š
  * 
- * Ìæ»»¹¦ÄÜ
+ * æ›¿æ¢åŠŸèƒ½
  * public String replace(char old,char new)
  * public String replace(CharSequence target,CharSequence replacement)
  *
- * È¥³ı×Ö·û´®Á½±ßµÄ¿Õ¸ñ	
+ * å»é™¤å­—ç¬¦ä¸²ä¸¤è¾¹çš„ç©ºæ ¼	
  * public String trim()
  * 
- * ±È½ÏÁ½¸ö×Ö·û´®  
+ * æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²  
  * public int compareTo(String str)
  * public int compareToIgnoreCase(String str)
  */
@@ -17,55 +17,55 @@ package com.yida_07.String;
 public class A_StringDemo {
 	
 	public static void main(String[] args) {
-		// public String replace(char old,char new) Ìæ»»¹¦ÄÜ(×Ö·ûµÄÌæ»»)
+		// public String replace(char old,char new) æ›¿æ¢åŠŸèƒ½(å­—ç¬¦çš„æ›¿æ¢)
 		String s = "hi,yidahulian";
 		String s2 = s.replace('i', 'o');
-		System.out.println(s + "Ìæ»»ºóµÄ½á¹ûÎª" + s2);
+		System.out.println(s + "æ›¿æ¢åçš„ç»“æœä¸º" + s2);
 		
 		System.out.println("------");
 		
-		// public String replaceAll(String old,String new) Ìæ»»¹¦ÄÜ(×Ö·û´®µÄÌæ»»)
+		// public String replaceAll(String old,String new) æ›¿æ¢åŠŸèƒ½(å­—ç¬¦ä¸²çš„æ›¿æ¢)
 		String s3 = "i love yida, welcom to yida, study yida";
 		//String s4 = s3.replaceAll("yida", "java");
 		
-		//public String replace(CharSequence target,CharSequence replacement) Ìæ»»¹¦ÄÜ(×Ö·û´®µÄÌæ»»)
+		//public String replace(CharSequence target,CharSequence replacement) æ›¿æ¢åŠŸèƒ½(å­—ç¬¦ä¸²çš„æ›¿æ¢)
 		String s4 = s3.replace("yida", "java");
-		System.out.println(s3 + "Ìæ»»ºóµÄ½á¹ûÎª" + s4);
+		System.out.println(s3 + "æ›¿æ¢åçš„ç»“æœä¸º" + s4);
 		
 		System.out.println("------");
 
-		// public String trim() È¥³ı×Ö·û´®Á½Í·µÄ¿Õ¸ñ
+		// public String trim() å»é™¤å­—ç¬¦ä¸²ä¸¤å¤´çš„ç©ºæ ¼
 		String s5 = " 		 good good study, day day up! 				 ", s6;
 		s6 = s5.trim();
-		System.out.println("È¥³ı×Ö·û´®Á½Í·µÄ¿Õ¸ñ£¬×îÖÕÎª" + s6);
+		System.out.println("å»é™¤å­—ç¬¦ä¸²ä¸¤å¤´çš„ç©ºæ ¼ï¼Œæœ€ç»ˆä¸º" + s6);
 		
 		System.out.println("------");
 
-		// public int compareTo(String str) ±È½ÏÁ½¸ö×Ö·û´®(Çø·Ö´óĞ¡Ğ´)
+		// public int compareTo(String str) æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²(åŒºåˆ†å¤§å°å†™)
 		String s7 = "hello", s8 = "java";
 		int result = s7.compareTo(s8);
-		System.out.println(s7 + "Óë" + s8 + "±È½ÏºóµÄ½á¹ûÎª" + result);
+		System.out.println(s7 + "ä¸" + s8 + "æ¯”è¾ƒåçš„ç»“æœä¸º" + result);
 		if (result > 0) {
-			System.out.println(s7 + "´óÓÚ" + s8);
+			System.out.println(s7 + "å¤§äº" + s8);
 		} else if (result < 0) {
-			System.out.println(s7 + "Ğ¡ÓÚ" + s8);
+			System.out.println(s7 + "å°äº" + s8);
 		} else {
-			System.out.println(s7 + "µÈÓÚ" + s8);
+			System.out.println(s7 + "ç­‰äº" + s8);
 		}
 		
 		System.out.println("------");
 		
-		// public int compareToIgnoreCase(String str) ±È½ÏÁ½¸ö×Ö·û´®(²»Çø·Ö´óĞ¡Ğ´)
+		// public int compareToIgnoreCase(String str) æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²(ä¸åŒºåˆ†å¤§å°å†™)
 		String s9 = "zELLO";
 		int result2 = s7.compareToIgnoreCase(s9);
-		System.out.println(s7 + "Óë" + s9 + "±È½ÏºóµÄ½á¹ûÎª" + result2);
+		System.out.println(s7 + "ä¸" + s9 + "æ¯”è¾ƒåçš„ç»“æœä¸º" + result2);
 		if (result2 > 0) {
-			System.out.println(s7 + "´óÓÚ" + s9);
+			System.out.println(s7 + "å¤§äº" + s9);
 		} else if (result2 < 0) {
-			System.out.println(s7 + "Ğ¡ÓÚ" + s9);
+			System.out.println(s7 + "å°äº" + s9);
 		} else {
-			System.out.println(s7 + "µÈÓÚ" + s9);
+			System.out.println(s7 + "ç­‰äº" + s9);
 		}
-	}
+	} 
 
 }
