@@ -1,14 +1,14 @@
 /*
- * StringÀàµÄÅĞ¶Ï¹¦ÄÜ£º
- * public boolean equals(Object obj):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬,Çø·Ö´óĞ¡Ğ´
- * public boolean equalsIgnoreCase(String str):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬,ºöÂÔ´óĞ¡Ğ´
- * public boolean contains(String str):ÅĞ¶Ï´ó×Ö·û´®ÖĞÊÇ·ñ°üº¬Ğ¡×Ö·û´®
- * public boolean startsWith(String str):ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔÄ³¸öÖ¸¶¨µÄ×Ö·û´®¿ªÍ·
- * public boolean endsWith(String str):ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔÄ³¸öÖ¸¶¨µÄ×Ö·û´®½áÎ²
- * public boolean isEmpty():ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ¡£
+ * Stringç±»çš„åˆ¤æ–­åŠŸèƒ½ï¼š
+ * public boolean equals(Object obj):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒ,åŒºåˆ†å¤§å°å†™
+ * public boolean equalsIgnoreCase(String str):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒ,å¿½ç•¥å¤§å°å†™
+ * public boolean contains(String str):åˆ¤æ–­å¤§å­—ç¬¦ä¸²ä¸­æ˜¯å¦åŒ…å«å°å­—ç¬¦ä¸²
+ * public boolean startsWith(String str):åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŸä¸ªæŒ‡å®šçš„å­—ç¬¦ä¸²å¼€å¤´
+ * public boolean endsWith(String str):åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŸä¸ªæŒ‡å®šçš„å­—ç¬¦ä¸²ç»“å°¾
+ * public boolean isEmpty():åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©ºã€‚
  * 
- * ×¢Òâ£º
- * 		×Ö·û´®ÄÚÈİÎª¿ÕºÍ×Ö·û´®¶ÔÏóÎª¿Õ¡£
+ * æ³¨æ„ï¼š
+ * 		å­—ç¬¦ä¸²å†…å®¹ä¸ºç©ºå’Œå­—ç¬¦ä¸²å¯¹è±¡ä¸ºç©ºã€‚
  * 		String s = "";
  * 		String s = null;
  */
@@ -20,43 +20,43 @@ public class A_StringDemo {
 		String s1 = "hello world";
 		String s2 = "hello world";
 		String s3 = "Hello WORLD";
-		//public boolean equals(Object obj):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬,Çø·Ö´óĞ¡Ğ´
+		//public boolean equals(Object obj):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒ,åŒºåˆ†å¤§å°å†™
 		System.out.println(s1.equals(s2));//true
 		System.out.println(s1.equals(s3));//false
 		
 		
 		System.out.println("-----------");
 		
-		//public boolean equalsIgnoreCase(String str):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬,ºöÂÔ´óĞ¡Ğ´
+		//public boolean equalsIgnoreCase(String str):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒ,å¿½ç•¥å¤§å°å†™
 		System.out.println(s1.equalsIgnoreCase(s3));//true
 		
 		System.out.println("-----------");
-		
-		//public boolean contains(String str):ÅĞ¶Ï´ó×Ö·û´®ÖĞÊÇ·ñ°üº¬Ğ¡×Ö·û´®
+		 
+		//public boolean contains(String str):åˆ¤æ–­å¤§å­—ç¬¦ä¸²ä¸­æ˜¯å¦åŒ…å«å°å­—ç¬¦ä¸²
 		System.out.println(s1.contains("wor"));//true
 		System.out.println(s1.contains("Wor"));//false
 		
 		System.out.println("-----------");
 		
-		//public boolean startsWith(String str):ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔÄ³¸öÖ¸¶¨µÄ×Ö·û´®¿ªÍ·
+		//public boolean startsWith(String str):åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŸä¸ªæŒ‡å®šçš„å­—ç¬¦ä¸²å¼€å¤´
 		System.out.println(s1.startsWith("hello"));//true
 		System.out.println(s1.startsWith("h"));//true
 		System.out.println(s1.startsWith("Hel"));//false
 		
 		System.out.println("-----------");
 		
-		//public boolean endsWith(String str):ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔÄ³¸öÖ¸¶¨µÄ×Ö·û´®½áÎ²
+		//public boolean endsWith(String str):åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŸä¸ªæŒ‡å®šçš„å­—ç¬¦ä¸²ç»“å°¾
 		System.out.println(s1.endsWith("world"));//true
 		System.out.println(s1.endsWith("ld"));//true
 		System.out.println(s1.endsWith("lD"));//false
 		
 		System.out.println("-----------");
 		
-		String s4 = "";//ÓĞÄÚ´æµØÖ·£¬µ«ÄÚÈİÎª¿Õ
+		String s4 = "";//æœ‰å†…å­˜åœ°å€ï¼Œä½†å†…å®¹ä¸ºç©º
 		System.out.println("isEmpty:" + s4.isEmpty());//true
 		
-		//String s5 = null;//ÄÚ´æµØÖ·Îª¿Õ
-		//System.out.println("isEmpty:" + s5.isEmpty());// NullPointerException s5¶ÔÏó¶¼²»´æÔÚ£¬ËùÒÔ²»ÄÜµ÷ÓÃ·½·¨£¬¿ÕÖ¸ÕëÒì³£
+		//String s5 = null;//å†…å­˜åœ°å€ä¸ºç©º
+		//System.out.println("isEmpty:" + s5.isEmpty());// NullPointerException s5å¯¹è±¡éƒ½ä¸å­˜åœ¨ï¼Œæ‰€ä»¥ä¸èƒ½è°ƒç”¨æ–¹æ³•ï¼Œç©ºæŒ‡é’ˆå¼‚å¸¸
 		
 	}
 
